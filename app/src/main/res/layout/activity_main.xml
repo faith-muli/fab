@@ -10,7 +10,20 @@
     tools:context=".MainActivity">
 
     <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:src="@drawable/ic_menu"
+        android:layout_alignBottom="@+id/menu"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:clickable="true"/>
+
 
     <com.github.clans.fab.FloatingActionMenu
         android:id="@+id/menu"
@@ -60,7 +73,16 @@
             fab:fab_size="mini"
             fab:fab_label="Menu item 1" />
 
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_item2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_star"
+            fab:fab_size="mini"
+            fab:fab_label="Menu item 2" />
+
     </com.github.clans.fab.FloatingActionMenu>
+
 
 
 
